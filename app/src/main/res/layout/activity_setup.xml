@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/NoActionBarColor">
+        <TextView
+            android:text="Account Setup"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:textColor="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/setUpProgressBar"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewId"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:src="@drawable/image_icon"
+        android:layout_width="164dp"
+        android:layout_height="164dp" />
+
+    <TextView
+        android:text="Name"
+        android:textSize="18sp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/userNameET"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="10dp"
+        android:hint="User Name"
+        android:backgroundTint="@color/off_white"
+        android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+        android:textColor="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/rounded_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

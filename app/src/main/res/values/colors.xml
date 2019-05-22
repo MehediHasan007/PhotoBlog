@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1690F8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="NoActionBarColor">#039BE5</color>
+    <color name="White">#FFFFFF</color>
+    <color name="off_white">#F5F5F5</color>
+    <color name="BackgroundColor">#1690F8</color>
+    <color name="WeatherColor">#9471AD</color>
+    <color name="Black">#000000</color>
+    <color name="nav_Header">#E2D6D8</color>
+    <color name="red">#FC0C0C</color>
+    <color name="green">#1CEE30</color>
+</resources>

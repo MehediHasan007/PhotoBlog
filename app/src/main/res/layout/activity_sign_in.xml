@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--        <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/NoActionBarColor">
+                    <TextView
+                        android:text="@string/sign_in"
+                        android:textSize="25dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/White"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.Toolbar>-->
+
+        <ProgressBar
+            android:id="@+id/singInProgressBar"
+            android:visibility="invisible"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Welcome to"
+            android:textSize="18sp"
+            android:textColor="@color/White"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Photo Blog"
+            android:textSize="36sp"
+            android:textColor="@color/White"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="E-mail"
+            android:textSize="18sp"
+            android:textColor="@color/White"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/userEmailET"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:hint="User email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Password"
+            android:textSize="18sp"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/userPasswordET"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:padding="10dp"
+            android:hint="User password"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/Black"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/White"
+                android:text="Have no account?"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:onClick="signUpOnclick"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
